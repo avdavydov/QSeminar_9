@@ -15,7 +15,6 @@ class CalculatorTest {
         CalculatorHelper calculatorHelper = mock(CalculatorHelper.class);
         when(calculatorHelper.do_calc(6, 3, '/')).thenReturn(2);
         when(calculatorHelper.do_calc(1, 2, '+')).thenReturn(3);
-        when(calculatorHelper.do_calc(6, 3, '/')).thenThrow(IllegalArgumentException.class);
 
         when(calculatorHelper.convertRomanToInteger("I")).thenReturn(1);
         when(calculatorHelper.convertRomanToInteger("II")).thenReturn(2);
